@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_one">#FEBCC8</color>
+    <color name="color_two">#FFFFBF</color>
+    <color name="color_three">#FFE0F6</color>
+    <color name="color_four">#DDFCDF</color>
+    <color name="color_five">#EAEBFF</color>
+    <color name="color_six">#E0FEFE</color>
+    <color name="color_seven">#CCB5EC</color>
+    <color name="color_eight">#9FC4E1</color>
+
+</resources>

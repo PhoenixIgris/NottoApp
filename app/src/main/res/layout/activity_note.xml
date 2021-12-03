@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/main_layout"
+        tools:context=".NoteActivity"
+        android:padding="1dp"
+
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:padding="5dp"
+    >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:orientation="horizontal"
+                      android:layout_weight="8"
+
+                      android:padding="10dp"
+        >
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="100"
+                          android:padding="5dp"
+            >
+                <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/back"
+                        android:layout_weight="10"
+                        android:id="@+id/back"
+                >
+                </ImageView>
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:text="Title"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                ></TextView>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                >
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/done"
+                                android:id="@+id/savenotes"
+                                android:layout_gravity="right"
+                        >
+                        </ImageView>
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_done"
+                                android:id="@+id/edit_notes"
+
+
+                        >
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:padding="2dp"
+                android:layout_weight="86"
+        >
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:hint="Title"
+                    android:id="@+id/text_title"
+                    android:fontFamily="@font/roboto"
+            ></EditText>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="90"
+                    android:hint="Title"
+                    android:id="@+id/text_desc"
+                    android:gravity="top|left"
+                    android:fontFamily="@font/roboto"
+
+            ></EditText>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:orientation="horizontal"
+                      android:layout_weight="6"
+
+
+        >
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:padding="2dp"
+            >
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="#CCB5EC"
+                            android:layout_margin="2dp"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#090909"
+                            android:id="@+id/background"/>
+                    <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/delete"
+                            android:id="@+id/delete"
+                            android:layout_alignParentRight="true"
+                    >
+                    </ImageView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
